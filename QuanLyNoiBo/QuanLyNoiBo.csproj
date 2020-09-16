@@ -85,6 +85,9 @@
     <EmbeddedResource Include="UserControls\HRDepartment\UCRegistration.resx">
       <DependentUpon>UCRegistration.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\HRDepartment\UCUpdateInformation.resx">
+      <DependentUpon>UCUpdateInformation.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
