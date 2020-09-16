@@ -1,0 +1,4 @@
+﻿namespace QuanLyNoiBo.UserControls.HRDepartment
+{
+   
+}

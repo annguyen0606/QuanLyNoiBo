@@ -33,12 +33,22 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="DevComponents.DotNetBar.Charts, Version=14.1.0.36, Culture=neutral, PublicKeyToken=7eb7c3a35b91de04, processorArchitecture=MSIL" />
+    <Reference Include="DevComponents.DotNetBar.Layout, Version=14.1.0.36, Culture=neutral, PublicKeyToken=7eb7c3a35b91de04, processorArchitecture=MSIL" />
+    <Reference Include="DevComponents.DotNetBar.Schedule, Version=14.1.0.36, Culture=neutral, PublicKeyToken=7eb7c3a35b91de04, processorArchitecture=MSIL" />
     <Reference Include="DevComponents.DotNetBar2, Version=14.1.0.36, Culture=neutral, PublicKeyToken=7eb7c3a35b91de04, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\..\DevComponent\DevComponents.DotNetBar2.dll</HintPath>
     </Reference>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="RestSharp, Version=106.11.4.0, Culture=neutral, PublicKeyToken=598062e77f915f75, processorArchitecture=MSIL">
+      <HintPath>..\packages\RestSharp.106.11.4\lib\net452\RestSharp.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -50,6 +60,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Class\Model\HRdepartment\ENTITYADDRESS.cs" />
+    <Compile Include="Class\Model\HRdepartment\ENTITYDESCRIP.cs" />
+    <Compile Include="Class\Model\HRdepartment\ENTITYEDU.cs" />
+    <Compile Include="Class\Model\HRdepartment\ENTITYID.cs" />
+    <Compile Include="Class\Model\HRdepartment\ENTITYPHONENUMBER.cs" />
+    <Compile Include="Class\Model\HRdepartment\ENTITYSERVICES.cs" />
+    <Compile Include="Class\Model\HRdepartment\ENTITYTYPE.cs" />
+    <Compile Include="Class\Model\HRdepartment\ENTITYWORK.cs" />
+    <Compile Include="Class\Model\HRdepartment\PERSONALINFORMATION.cs" />
+    <Compile Include="Controler\hinhanh.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -63,6 +83,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\HRDepartment\JObject.cs" />
     <Compile Include="UserControls\HRDepartment\UCRegistration.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -89,6 +110,7 @@
     <EmbeddedResource Include="UserControls\HRDepartment\UCUpdateInformation.resx">
       <DependentUpon>UCUpdateInformation.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
