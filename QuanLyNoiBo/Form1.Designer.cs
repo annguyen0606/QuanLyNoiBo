@@ -227,6 +227,8 @@
             // btn_RegistrationNew
             // 
             this.btn_RegistrationNew.FixedSize = new System.Drawing.Size(90, 70);
+            this.btn_RegistrationNew.Image = ((System.Drawing.Image)(resources.GetObject("btn_RegistrationNew.Image")));
+            this.btn_RegistrationNew.ImageFixedSize = new System.Drawing.Size(30, 30);
             this.btn_RegistrationNew.ImagePaddingHorizontal = 30;
             this.btn_RegistrationNew.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
             this.btn_RegistrationNew.Name = "btn_RegistrationNew";
@@ -682,6 +684,7 @@
             this.Controls.Add(this.superTabControl1);
             this.Controls.Add(this.ribbonControl1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Conek";

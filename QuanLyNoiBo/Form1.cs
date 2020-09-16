@@ -34,7 +34,7 @@ namespace QuanLyNoiBo
         {
             if (KiemTraTenTabConTrol("&Registration") == false)
             {
-                SuperTabItem Tab = superTabControl1.CreateTab("&Nhập xe");
+                SuperTabItem Tab = superTabControl1.CreateTab("&Registration");
                 UCRegistration frm = new UCRegistration();
                 frm.Dock = DockStyle.Fill;
                 Tab.AttachedControl.Controls.Add(frm);
