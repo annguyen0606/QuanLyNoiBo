@@ -64,6 +64,12 @@
     <Compile Include="UserControls\HRDepartment\UCRegistration.Designer.cs">
       <DependentUpon>UCRegistration.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\HRDepartment\UCUpdateInformation.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\HRDepartment\UCUpdateInformation.Designer.cs">
+      <DependentUpon>UCUpdateInformation.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
