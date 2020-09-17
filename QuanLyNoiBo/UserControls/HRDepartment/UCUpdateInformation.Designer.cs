@@ -32,10 +32,11 @@
             // 
             // UCUpdateInformation
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.Name = "UCUpdateInformation";
-            this.Size = new System.Drawing.Size(969, 627);
+            this.Size = new System.Drawing.Size(1938, 1206);
             this.ResumeLayout(false);
 
         }

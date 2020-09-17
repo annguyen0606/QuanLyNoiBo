@@ -365,6 +365,7 @@
             this.tbmst.PreventEnterBeep = true;
             this.tbmst.Size = new System.Drawing.Size(261, 31);
             this.tbmst.TabIndex = 21;
+            this.tbmst.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbmst_KeyPress);
             // 
             // txbEmail
             // 
