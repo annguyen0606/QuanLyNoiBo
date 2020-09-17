@@ -42,5 +42,23 @@ namespace QuanLyNoiBo
                 superTabControl1.SelectedTabIndex = superTabControl1.Tabs.Count - 1;
             }
         }
+
+        private void ribbonBar2_ItemClick(object sender, EventArgs e)
+        {
+         
+        }
+
+        private void btn_LoadInfor_Click(object sender, EventArgs e)
+        {
+            if (KiemTraTenTabConTrol("&UCLoaddata") == false)
+            {
+                SuperTabItem Tab = superTabControl1.CreateTab("&UCLoaddata");
+                UCloaddata frm = new UCloaddata();
+                frm.Dock = DockStyle.Fill;
+                Tab.AttachedControl.Controls.Add(frm);
+                frm.Show();
+                superTabControl1.SelectedTabIndex = superTabControl1.Tabs.Count - 0;
+            }
+        }
     }
 }
