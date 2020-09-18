@@ -80,6 +80,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Class\Model\Login\formatpass.cs" />
+    <Compile Include="Class\Model\Login\Login.cs" />
     <Compile Include="Class\Model\HRdepartment\ENTITYADDRESS.cs" />
     <Compile Include="Class\Model\HRdepartment\ENTITYDESCRIP.cs" />
     <Compile Include="Class\Model\HRdepartment\ENTITYEDU.cs" />
@@ -121,6 +123,18 @@
     <Compile Include="UserControls\HRDepartment\UCUpdateInformation.Designer.cs">
       <DependentUpon>UCUpdateInformation.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\Login\changerpassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserControls\Login\changerpassword.Designer.cs">
+      <DependentUpon>changerpassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Login\Loginsystem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserControls\Login\Loginsystem.Designer.cs">
+      <DependentUpon>Loginsystem.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -137,6 +151,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\HRDepartment\UCUpdateInformation.resx">
       <DependentUpon>UCUpdateInformation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Login\changerpassword.resx">
+      <DependentUpon>changerpassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Login\Loginsystem.resx">
+      <DependentUpon>Loginsystem.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
