@@ -1,5 +1,7 @@
 ﻿using DevComponents.DotNetBar;
 using QuanLyNoiBo.UserControls.HRDepartment;
+using QuanLyNoiBo.UserControls.Login;
+using QuanLyThe.Model;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -8,6 +10,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Web.UI.WebControls;
 using System.Windows.Forms;
 
 namespace QuanLyNoiBo
@@ -17,6 +20,7 @@ namespace QuanLyNoiBo
         public Form1()
         {
             InitializeComponent();
+            
         }
         private bool KiemTraTenTabConTrol(string name)
         {
@@ -58,6 +62,55 @@ namespace QuanLyNoiBo
                 Tab.AttachedControl.Controls.Add(frm);
                 frm.Show();
                 superTabControl1.SelectedTabIndex = superTabControl1.Tabs.Count - 0;
+            }
+        }
+
+
+        private void applicationButton1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ribbonTabItem1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        
+
+        private void ribbonControl1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_UpdateInfor_Click(object sender, EventArgs e)
+        {
+          
+        }
+
+        private void buttonItem3_Click(object sender, EventArgs e)
+        {
+            if (KiemTraTenTabConTrol("&loginsystem") == false)
+            {
+           
+                Loginsystem frm = new Loginsystem();
+                frm.Dock = DockStyle.Fill;
+                this.Visible = false;
+                frm.Show();
+              
+            }
+        }
+
+        private void buttonItem2_Click(object sender, EventArgs e)
+        {
+            if (KiemTraTenTabConTrol("&changerpassword") == false)
+            {
+
+                changerpassword frm = new changerpassword();
+                frm.Dock = DockStyle.Fill;
+                this.Visible = false;
+                frm.Show();
+
             }
         }
     }
