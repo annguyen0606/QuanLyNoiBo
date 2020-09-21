@@ -145,7 +145,7 @@ namespace QuanLyNoiBo.UserControls.HRDepartment
                     Company = comboBoxcongty.Text + ",ON",
                     DateOn = dateStart,
                     DateOff = "",
-                    Position = txbvitri.Text,
+                    Department = txbvitri.Text,
                     Office = txbvanphong.Text
                 }
             };
