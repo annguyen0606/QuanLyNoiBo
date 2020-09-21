@@ -11,7 +11,7 @@ namespace QuanLyThe.Model
         public string Company { get; set; }
         public string DateOn { get; set; }
         public string DateOff { get; set; }
-        public string Position { get; set; }
+        public string Department { get; set; }
         public string Office { get; set; }
     }
 }
