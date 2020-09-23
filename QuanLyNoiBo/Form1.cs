@@ -118,5 +118,18 @@ namespace QuanLyNoiBo
         {
 
         }
+
+        private void BtnLoadDuLieuChamCong_Click(object sender, EventArgs e)
+        {
+            if (KiemTraTenTabConTrol("&UCLoadDuLieuChamCong") == false)
+            {
+                SuperTabItem Tab = superTabControl1.CreateTab("&UCLoadDuLieuChamCong");
+                UCLoadDuLieuChamCong frm = new UCLoadDuLieuChamCong();
+                frm.Dock = DockStyle.Fill;
+                Tab.AttachedControl.Controls.Add(frm);
+                frm.Show();
+                superTabControl1.SelectedTabIndex = superTabControl1.Tabs.Count - 1;
+            }
+        }
     }
 }
